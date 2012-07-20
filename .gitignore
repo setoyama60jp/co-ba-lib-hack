@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#RubyMineの設定ファイルを無視する
+.idea
+
