@@ -1,10 +1,226 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-test_shelf:
+test_shelf_1:
   id: 1
-  address: north-1
+  address: W-4-8
   coba_user_id: 1
-  photo_url: dammy_book_shelf.jpg
-  introduction: "MyText introduction"
+  photo_url: "http://co-ba.rimlet.jp/photo/W-4-8.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_2:
+  id: 2
+  address: SL-3-2
+  coba_user_id: 2
+  photo_url: "http://co-ba.rimlet.jp/photo/SL-3-2.jpg"
+  introduction:
+  book_shelf_position: south
+
+test_shelf_3:
+  id: 3
+  address: NL-4-2
+  coba_user_id: 3
+  photo_url: "http://co-ba.rimlet.jp/photo/NL-4-2.jpg"
+  introduction:
   book_shelf_position: north
+
+test_shelf_4:
+  id: 4
+  address: E-6-8
+  coba_user_id: 4
+  photo_url: "http://co-ba.rimlet.jp/photo/E-6-8.jpg"
+  introduction:
+  book_shelf_position: east
+
+test_shelf_5:
+  id: 5
+  address: SR-2-2
+  coba_user_id: 5
+  photo_url: "http://co-ba.rimlet.jp/photo/SR-2-2.jpg"
+  introduction:
+  book_shelf_position: south
+
+test_shelf_6:
+  id: 6
+  address: E-4-7
+  coba_user_id: 6
+  photo_url: "http://co-ba.rimlet.jp/photo/E-4-7.jpg"
+  introduction:
+  book_shelf_position: east
+
+test_shelf_7:
+  id: 7
+  address: NL-3-1
+  coba_user_id: 7
+  photo_url: "http://co-ba.rimlet.jp/photo/NL-3-1.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_8:
+  id: 8
+  address: NR-4-2
+  coba_user_id: 8
+  photo_url: "http://co-ba.rimlet.jp/photo/NR-4-2.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_9:
+  id: 9
+  address: E-3-6
+  coba_user_id: 9
+  photo_url: "http://co-ba.rimlet.jp/photo/E-3-6.jpg"
+  introduction:
+  book_shelf_position: east
+
+test_shelf_10:
+  id: 10
+  address: W-5-6
+  coba_user_id: 10
+  photo_url: "http://co-ba.rimlet.jp/photo/W-5-6.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_11:
+  id: 11
+  address: E-3-8
+  coba_user_id: 11
+  photo_url: "http://co-ba.rimlet.jp/photo/E-3-8.jpg"
+  introduction:
+  book_shelf_position: east
+
+test_shelf_12:
+  id: 12
+  address: SR-4-2
+  coba_user_id: 12
+  photo_url: "http://co-ba.rimlet.jp/photo/SR-4-2.jpg"
+  introduction:
+  book_shelf_position: south
+
+test_shelf_13:
+  id: 13
+  address: SR-3-1
+  coba_user_id: 13
+  photo_url: "http://co-ba.rimlet.jp/photo/SR-3-1.jpg"
+  introduction:
+  book_shelf_position: south
+
+test_shelf_14:
+  id: 14
+  address: N-2-10
+  coba_user_id: 14
+  photo_url: "http://co-ba.rimlet.jp/photo/N-2-10.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_15:
+  id: 15
+  address: W-5-7
+  coba_user_id: 15
+  photo_url: "http://co-ba.rimlet.jp/photo/W-5-7.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_16:
+  id: 16
+  address: E-5-10
+  coba_user_id: 16
+  photo_url: "http://co-ba.rimlet.jp/photo/E-5-10.jpg"
+  introduction:
+  book_shelf_position: east
+
+test_shelf_17:
+  id: 17
+  address: NR-5-1
+  coba_user_id: 17
+  photo_url: "http://co-ba.rimlet.jp/photo/NR-5-1.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_18:
+  id: 18
+  address: W-4-6
+  coba_user_id: 18
+  photo_url: "http://co-ba.rimlet.jp/photo/W-4-6.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_19:
+  id: 19
+  address: N-2-3
+  coba_user_id: 19
+  photo_url: "http://co-ba.rimlet.jp/photo/N-2-3.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_20:
+  id: 20
+  address: NR-4-3
+  coba_user_id: 20
+  photo_url: "http://co-ba.rimlet.jp/photo/NR-4-3.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_21:
+  id: 21
+  address: SL-5-1
+  coba_user_id: 21
+  photo_url: "http://co-ba.rimlet.jp/photo/SL-5-1.jpg"
+  introduction:
+  book_shelf_position: south
+
+test_shelf_22:
+  id: 22
+  address: W-3-1
+  coba_user_id: 22
+  photo_url: "http://co-ba.rimlet.jp/photo/W-3-1.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_23:
+  id: 23
+  address: E-5-9
+  coba_user_id: 23
+  photo_url: "http://co-ba.rimlet.jp/photo/E-5-9.jpg"
+  introduction:
+  book_shelf_position: east
+
+test_shelf_24:
+  id: 24
+  address: W-5-4
+  coba_user_id: 24
+  photo_url: "http://co-ba.rimlet.jp/photo/W-5-4.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_25:
+  id: 25
+  address: N-2-12
+  coba_user_id: 25
+  photo_url: "http://co-ba.rimlet.jp/photo/N-2-12.jpg"
+  introduction:
+  book_shelf_position: north
+
+test_shelf_26:
+  id: 26
+  address: W-3-4
+  coba_user_id: 26
+  photo_url: "http://co-ba.rimlet.jp/photo/W-3-4.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_27:
+  id: 27
+  address: W-4-3
+  coba_user_id: 27
+  photo_url: "http://co-ba.rimlet.jp/photo/W-4-3.jpg"
+  introduction:
+  book_shelf_position: west
+
+test_shelf_28:
+  id: 28
+  address: E-5-6
+  coba_user_id: 28
+  photo_url: "http://co-ba.rimlet.jp/photo/E-5-6.jpg"
+  introduction:
+  book_shelf_position: east
 

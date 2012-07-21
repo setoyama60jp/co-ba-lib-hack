@@ -4,10 +4,226 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-test_user:
+test_user_1:
   id: 1
-  email: test@coba.com
+  email: 1test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: rnaoto
+  name: "齋藤直人"
+
+test_user_2:
+  id: 2
+  email: 2test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: hiroki.murakami0911
+  name: "村上 浩輝"
+
+test_user_3:
+  id: 3
+  email: 3test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: ikedanoda
+  name: "池田洋介"
+
+test_user_4:
+  id: 4
+  email: 4test@coba.com
   encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
   confirmed_at: <%= Date.today %>
   facebook_id: manami.kkh
-  name: たもっさん
+  name: "國保 まなみ"
+
+test_user_5:
+  id: 5
+  email: 5test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: doit7
+  name: "土井 鉄庸"
+
+test_user_6:
+  id: 6
+  email: 6test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: hiroshi.obayashi
+  name: "大林 寛"
+
+test_user_7:
+  id: 7
+  email: 7test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: corsicagallery
+  name: "久野 恵介"
+
+test_user_8:
+  id: 8
+  email: 8test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: oshimago
+  name: "大島 剛"
+
+test_user_9:
+  id: 9
+  email: 9test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: hidekatsu.nakayama.1
+  name: "中山 英克"
+
+test_user_10:
+  id: 10
+  email: 10test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: nodaken1
+  name: "野田賢一"
+
+test_user_11:
+  id: 11
+  email: 11test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: maa20xx
+  name: "中村 真広"
+
+test_user_12:
+  id: 12
+  email: 12test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: naoki.yoshioka
+  name: "吉岡 直樹"
+
+test_user_13:
+  id: 13
+  email: 13test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: kangarou.suzuki
+  name: "カンガルー 鈴木"
+
+test_user_14:
+  id: 14
+  email: 14test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: yixingfeng
+  name: "馮 意欣"
+
+test_user_15:
+  id: 15
+  email: 15test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: ayu.iwashima
+  name: "Ayu Iwashima"
+
+test_user_16:
+  id: 16
+  email: 16test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: montecut
+  name: "佐藤 拓也"
+
+test_user_17:
+  id: 17
+  email: 17test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: fukuokamakoto
+  name: "福岡 誠"
+
+test_user_18:
+  id: 18
+  email: 18test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: paso.telma
+  name: "木暮 圭佑"
+
+test_user_19:
+  id: 19
+  email: 19test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: akuyan613
+  name: "Yuka Tanaka"
+
+test_user_20:
+  id: 20
+  email: 20test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: nobu417
+  name: "佐藤 信之"
+
+test_user_21:
+  id: 21
+  email: 21test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: daisaku
+  name: "山本 大策"
+
+test_user_22:
+  id: 22
+  email: 22test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: masaru.takei.3
+  name: "武井 優"
+
+test_user_23:
+  id: 23
+  email: 23test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: katotomoya
+  name: "加藤 智也"
+
+test_user_24:
+  id: 24
+  email: 24test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: koichi.kamo
+  name: "加茂 宏一"
+
+test_user_25:
+  id: 25
+  email: 25test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: sadahiro.tani
+  name: "谷 貞宏"
+
+test_user_26:
+  id: 26
+  email: 26test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: kaigeayumi
+  name: "界外 亜由美"
+
+test_user_27:
+  id: 27
+  email: 27test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: 0xad5a91
+  name: "やまざき なおき"
+
+test_user_28:
+  id: 28
+  email: 28test@coba.com
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
+  confirmed_at: <%= Date.today %>
+  facebook_id: 46kiuchi
+  name: "木内 志朗"

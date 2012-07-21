@@ -43,7 +43,8 @@
           <p class="photo">
 
             <%= link_to book.booklog_url, :target => "_blank" do %>
-              <%= image_tag book.image_url, :alt => book.title, :width => '174', :height => '174' %>
+              <%#= image_tag book.image_url, :alt => book.title, :width => '174', :height => '174' %>
+              <%= image_tag book.image_url, :alt => book.title, :height => '174' %>
             <% end %>
 
           </p>
