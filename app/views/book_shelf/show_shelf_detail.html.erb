@@ -2,216 +2,281 @@
 <article id="detail" class="wrapInner">
 
 <header id="profile">
-<h1>
-  <% coba_user = @target_book_shelf.coba_user %>
-<span class="photo"><%= image_tag 'https://graph.facebook.com/manami.kkh/picture?type=square', :alt => 'たもっさん' %></span>
-<span class="text">たもっさんの本棚</span>
-</h1>
+  <h1>
+    <% coba_user = @target_book_shelf.coba_user %>
+    <% if coba_user && coba_user.facebook_id %>
+      <span class="photo"><%= image_tag 'https://graph.facebook.com/' + coba_user.facebook_id + '/picture?type=square', :alt => coba_user.try(:name) %></span>
+    <% end %>
+    <% if coba_user %>
+      <span class="text"><%= coba_user.name %>の本棚</span>
+    <% end %>
+  </h1>
 
-<div id="profileRight">
-<p>システムつくったりとか、そんなかんじ。 co-ba libraryの本（http://booklog.jp/users/rimlet?display=blog&amp;category_id=2072603&amp;status=0&amp;rank=0&amp;sort=sort_desc）は、お声がけいただければ、お貸しいたします。 （いなさそうだけど）</p>
-</div>
-</header><!-- /#profile -->
+  <div id="profileRight">
+    <p><%= @target_book_shelf.introduction %></p>
+  </div>
+</header>
+<!-- /#profile -->
 
 
 <div id="bookArea">
-<div id="bookShelf">
-<div id="bookImage">
-  <p><%= image_tag 'dammy_book_shelf.jpg', :alt => "本棚", :width => "600", :height => "450" %></p>
+  <div id="bookShelf">
+    <div id="bookImage">
+      <p><%= image_tag @target_book_shelf.photo_url, :alt => "本棚", :width => "600", :height => "450" %></p>
+    </div>
+  </div>
+  <!-- /#bookShelf -->
+
+  <div id="fbComments">
+    <div class="fb-comments" data-href="<%= url_for(:controller => 'book_shelf', :action => 'show_shelf_detail', :book_shelf_id => params[:book_shelf_id], :only_path => false) %>" data-num-posts="2" data-width="380"></div>
+  </div>
+  <!-- /#fbComments -->
+
 </div>
-</div><!-- /#bookShelf -->
-
-<div id="fbComments">
-  <div class="fb-comments" data-href="<%= url_for(:controller => 'book_shelf', :action => 'show_shelf_detail', :book_shelf_id => params[:book_shelf_id], :only_path => false) %>" data-num-posts="2" data-width="380"></div>
-</div><!-- /#fbComments -->
-
-</div><!-- /#bookArea -->
-
+<!-- /#bookArea -->
 
 
 <div id="bookDetailList01">
-  <div class="box">
-    <p class="photo">
-      <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-      <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-      </a>
-    </p>
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
   <h2 class="title">本タイトル</h2>
+
   <p class="author">著者名</p>
-  </div><!-- /.box -->
+</div>
+<!-- /.box -->
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
- <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>    <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>    <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+  <h2 class="title">本タイトル</h2>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+  <h2 class="title">本タイトル</h2>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル</h2>
- <p class="author">著者名</p>
- </div><!-- /.box -->
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
 
- <div class="box">
-   <p class="photo">
-     <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
-     <%= image_tag 'dammy_book_detail.jpg', :alt=> '本タイトル', :width => '174', :height => '174' %>
-     </a>
-   </p>
-   <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
- <p class="author">著者名著者名著者名</p>
- </div><!-- /.box -->
+  <h2 class="title">本タイトル</h2>
 
- </div><!-- /#bookDetailList01 -->
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル</h2>
+
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル</h2>
+
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル</h2>
+
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル</h2>
+
+  <p class="author">著者名</p>
+</div>
+<!-- /.box -->
+
+<div class="box">
+  <p class="photo">
+    <a href="http://booklog.jp/users/gocci/archives/1/409123772X" target="_blank">
+      <%= image_tag 'dammy_book_detail.jpg', :alt => '本タイトル', :width => '174', :height => '174' %>
+    </a>
+  </p>
+
+  <h2 class="title">本タイトル本タイトル本タイトル本タイトル本タイトル</h2>
+
+  <p class="author">著者名著者名著者名</p>
+</div>
+<!-- /.box -->
+
+</div>
+<!-- /#bookDetailList01 -->
 
 
-</article><!-- /#detail.wrapInner -->
+</article>
+<!-- /#detail.wrapInner -->
 </div><!-- /#contentsWrapper -->
 
 
