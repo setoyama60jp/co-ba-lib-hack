@@ -38,22 +38,24 @@
 
     <div id="bookDetailList01">
 
-      <% @target_book_shelf.books.each do |book| %>
-        <div class="box">
-          <p class="photo">
+      <% if @target_book_shelf.books %>
+        <% @target_book_shelf.books.each do |book| %>
+          <div class="box">
+            <p class="photo">
 
-            <%= link_to book.booklog_url, :target => "_blank" do %>
-              <%#= image_tag book.image_url, :alt => book.title, :width => '174', :height => '174' %>
-              <%= image_tag book.image_url, :alt => book.title, :height => '174' %>
-            <% end %>
+              <%= link_to book.booklog_url, :target => "_blank" do %>
+                <%#= image_tag book.image_url, :alt => book.title, :width => '174', :height => '174' %>
+                <%= image_tag book.image_url, :alt => book.title, :height => '174' %>
+              <% end %>
 
-          </p>
+            </p>
 
-          <h2 class="title"><%= book.title %></h2>
+            <h2 class="title"><%= book.title %></h2>
 
-          <p class="author"><%= book.author %></p>
-        </div>
-        <!-- /.box -->
+            <p class="author"><%= book.author %></p>
+          </div>
+          <!-- /.box -->
+        <% end %>
       <% end %>
 
     </div>
