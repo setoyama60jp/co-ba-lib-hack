@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 test_book:
+  id: 1
   booklog_id: test1234
   asin: 123456789
   booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
@@ -10,9 +11,10 @@ test_book:
   image_width: 70
   image_height: 70
   category: book
-  book_shelf: test_shelf
+  book_shelf_id: 1
 
 test_book2:
+  id: 2
   booklog_id: test1234
   asin: 123456789
   booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
@@ -22,4 +24,4 @@ test_book2:
   image_width: 70
   image_height: 70
   category: book
-  book_shelf: test_shelf
+  book_shelf_id: 1

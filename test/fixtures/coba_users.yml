@@ -5,6 +5,7 @@
 # below each fixture, per the syntax in the comments below
 #
 test_user:
+  id: 1
   email: test@coba.com
   encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
   confirmed_at: <%= Date.today %>

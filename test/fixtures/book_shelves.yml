@@ -1,8 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 test_shelf:
+  id: 1
   address: north-1
-  coba_user: test_user
+  coba_user_id: 1
   photo_url: dammy_book_shelf_jpg
   introduction: "MyText introduction"
 
