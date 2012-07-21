@@ -361,7 +361,7 @@ test_book_28:
   booklog_url: "http://booklog.jp/users/rimlet/archives/5/4910059690724"
   title: "Harvard Business Review (ハーバード・ビジネス・レビュー) 2012年 07月号 ［雑誌］"
   author: ""
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 47
   image_height: 64
   category: "magazine"
@@ -413,7 +413,7 @@ test_book_32:
   booklog_url: "http://booklog.jp/users/rimlet/archives/5/4910082650726"
   title: "Mac People (マックピープル) 2012年 07月号 ［雑誌］"
   author: ""
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 47
   image_height: 64
   category: "magazine"
@@ -959,7 +959,7 @@ test_book_74:
   booklog_url: "http://booklog.jp/users/rimlet/archives/5/9784121021595"
   title: "戦国時代の流行歌"
   author: "小野恭靖"
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 40
   image_height: 64
   category: "book"
@@ -3013,7 +3013,7 @@ test_book_232:
   booklog_url: "http://booklog.jp/users/oshimago/archives/5/9784894515062"
   title: "迷いが消える決断思考"
   author: "新妻比佐志"
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 43
   image_height: 64
   category: "book"
@@ -3624,7 +3624,7 @@ test_book_279:
   booklog_url: "http://booklog.jp/users/oshimago/archives/5/4910094450420"
   title: "NHK ラジオ入門ビジネス英語 2012年 04月号 ［雑誌］"
   author: ""
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 45
   image_height: 64
   category: "magazine"
@@ -3637,7 +3637,7 @@ test_book_280:
   booklog_url: "http://booklog.jp/users/oshimago/archives/5/4910088250425"
   title: "NHK ラジオ実践ビジネス英語 2012年 04月号 ［雑誌］"
   author: ""
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 45
   image_height: 64
   category: "magazine"
@@ -4391,7 +4391,7 @@ test_book_338:
   booklog_url: "http://booklog.jp/users/maa20xx/archives/1/4810340554"
   title: "黒川紀章ノート―思索と創造の軌跡"
   author: "黒川 紀章"
-  image_url: "http://images-jp.amazon.com/images/P/4810340554.09._SY174_.jpg"
+  image_url: ""
   image_width: 52
   image_height: 75
   category: "book"
@@ -5535,7 +5535,7 @@ test_book_426:
   booklog_url: "http://booklog.jp/users/yikin/archives/1/4480355022"
   title: "宮武外骨・滑稽新聞 第２冊 第３１号～第６０号"
   author: "赤瀬川原平"
-  image_url: "http://images-jp.amazon.com/images/P/4480355022.09._SY174_.jpg"
+  image_url: ""
   image_width: 54
   image_height: 75
   category: "book"
@@ -8538,7 +8538,7 @@ test_book_657:
   booklog_url: "http://booklog.jp/users/akuyanlist/archives/1/4062146711"
   title: "竹画集　刀語絵巻　豪華版"
   author: "竹"
-  image_url: "http://images-jp.amazon.com/images/P/4062146711.09._SY174_.jpg"
+  image_url: ""
   image_width: 75
   image_height: 70
   category: "book"
@@ -8655,7 +8655,7 @@ test_book_666:
   booklog_url: "http://booklog.jp/users/yamamotodaisaku/archives/1/B007KJZU2C"
   title: "エレクトーンポップスコア11　富岡ヤスヤ"
   author: ""
-  image_url: "http://images-jp.amazon.com/images/P/B007KJZU2C.09._SY174_.jpg"
+  image_url: ""
   image_width: 56
   image_height: 75
   category: "book"
@@ -8863,7 +8863,7 @@ test_book_682:
   booklog_url: "http://booklog.jp/users/masarutakei/archives/5/9784863850767"
   title: "アメリカ文学紀行"
   author: "那須省一"
-  image_url: "http://images-jp.amazon.com/images/P/.09._SY174_.jpg"
+  image_url: ""
   image_width: 43
   image_height: 64
   category: "book"
@@ -9344,7 +9344,7 @@ test_book_719:
   booklog_url: "http://booklog.jp/users/0xad5a91/archives/1/4385130981"
   title: "新明解国語辞典"
   author: ""
-  image_url: "http://images-jp.amazon.com/images/P/4385130981.09._SY174_.jpg"
+  image_url: ""
   image_width: 56
   image_height: 75
   category: "book"
