@@ -17,3 +17,5 @@
 #RubyMineの設定ファイルを無視する
 .idea
 
+#.envはpushしない
+.env

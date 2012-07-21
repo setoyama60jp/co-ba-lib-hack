@@ -57,3 +57,4 @@ gem 'formtastic', '~> 2.1.1'  # 2012/04/17時点のactiveadminのバグで2.1.1�
 
 
 gem 'pg'
+gem 'thin'
