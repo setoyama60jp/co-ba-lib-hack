@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  booklog_id: MyString
+  asin: MyString
+  booklog_url: MyString
+  title: MyString
+  author: MyString
+  image_url: MyString
+  image_width: 1
+  image_height: 1
+  category: MyString
+
+two:
+  booklog_id: MyString
+  asin: MyString
+  booklog_url: MyString
+  title: MyString
+  author: MyString
+  image_url: MyString
+  image_width: 1
+  image_height: 1
+  category: MyString
