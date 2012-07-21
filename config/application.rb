@@ -4,9 +4,9 @@ require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
+  #Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+  Bundler.require(:default, :assets, Rails.env)
 end
 
 module CoBaLibHack
@@ -60,5 +60,16 @@ module CoBaLibHack
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+        # following is for best-teacher dev added
+    config.assets.initialize_on_precompile = false
+
+
+    # active_adminのプリコンパイルエラー対策の設定
+    # https://github.com/gregbell/active_admin/issues/810
+    #config.assets.precompile += %w[active_admin.css active_admin.js]
+    config.assets.precompile += ['active_admin.css', 'active_admin/print.css', 'active_admin.js']
+
+
   end
 end
