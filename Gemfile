@@ -51,3 +51,5 @@ gem 'dalli', '1.1.5'
 gem 'devise', '2.0.4'
 
 gem 'activeadmin'
+
+gem 'pg'
