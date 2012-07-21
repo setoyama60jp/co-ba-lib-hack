@@ -8,3 +8,5 @@ test_user:
   email: test@coba.com
   encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
   confirmed_at: <%= Date.today %>
+  facebook_id: manami.kkh
+  name: たもっさん
