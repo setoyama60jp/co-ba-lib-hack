@@ -45,7 +45,11 @@
 
               <%= link_to book.booklog_url, :target => "_blank" do %>
                 <%#= image_tag book.image_url, :alt => book.title, :width => '174', :height => '174' %>
-                <%= image_tag book.image_url, :alt => book.title, :height => '174' %>
+                <% if book.image_url && !book.image_url.empty? %>
+                  <%= image_tag book.image_url, :alt => book.title, :height => '174' %>
+                <% else %>
+                  <%= image_tag 'noImage.jpg', :alt => book.title, :height => '174' %>
+                <% end %>
               <% end %>
 
             </p>
