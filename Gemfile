@@ -49,3 +49,5 @@ gem 'dalli', '1.1.5'
 
 #for sigin in, sign out
 gem 'devise', '2.0.4'
+
+gem 'activeadmin'

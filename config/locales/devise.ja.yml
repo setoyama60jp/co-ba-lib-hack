@@ -1,0 +1,45 @@
+ja:
+  errors:
+    messages:
+      expired: "は有効期限が切れました。新たに要求してください。"
+      not_found: "は見つかりませんでした。"
+      already_confirmed: "は既に登録済みです。"
+      not_locked: "はログイン可能です。"
+      not_saved:
+        one: "保存する時に１つのエラーが発生しました。"
+        other: "保存する時に%{count}つのエラーが発生しました。"
+
+  devise:
+    failure:
+      already_authenticated: 'あなたは既にログインしています。'
+      unauthenticated: 'ログインしてください。'
+      unconfirmed: '本登録を行ってください。'
+      locked: 'あなたのアカウントはロックされています。'
+      invalid: 'メールアドレス又はパスワードが違います。'
+      invalid_token: '認証キーが不正です。'
+      timeout: 'ログインの有効期間を過ぎました。もう一度ログインしてください。'
+      inactive: 'アカウントが有効になっていません。'
+    sessions:
+      signed_in: 'ログインしました。'
+      signed_out: 'ログアウトしました。'
+    passwords:
+      send_instructions: "パスワードのリセット方法をメールしました。登録されたメールアドレスでご確認ください。"
+      updated: "パスワードの更新を完了しました。"
+    confirmations:
+      send_instructions: "本登録の手続きをメールしました。登録されたメールアドレスでご確認ください。"
+      confirmed: "本登録を完了しました。現在ログイン中です。"
+    registrations:
+      signed_up: "アカウントの登録を完了しました。本登録手続きのメールを登録いただいたメールアドレスでご確認ください。"
+      signed_up_but_unconfirmed: ''
+      updated: "アカウントの更新を完了しました。"
+      destroyed: "アカウントを削除しました。またのご利用をお待ちしています。"
+    unlocks:
+      send_instructions: "アカウント凍結解除の手続きをメールしました。登録されたメールアドレスでご確認ください。"
+      unlocked: "アカウントの凍結を解除しました。"
+    mailer:
+      confirmation_instructions:
+        subject: "[Best Teacher]無料会員登録手続きのご案内"
+      reset_password_instructions:
+        subject: '[Best Teacher]パスワード再設定手続きのご案内'
+      unlock_instructions:
+        subject: '[Best Teacher]アカウント凍結解除手続きのご案内'
