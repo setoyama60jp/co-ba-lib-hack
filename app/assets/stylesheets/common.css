@@ -73,9 +73,15 @@ input[type="radio"] {
 		 				header
 ------------------------------------------------------------------------------------*/
 #globalHeader {
-  background: #f9f9f9;
+  background: #171717;
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 0;
+}
+#globalHeader .wrapInner {
+  background: #171717;
+}
+#globalHeader h1 {
+  text-align: center;
 }
 
 /*----------------------------------------------------------------------------------
@@ -83,14 +89,18 @@ input[type="radio"] {
 ------------------------------------------------------------------------------------*/
 div#contentsWrapper {
   line-height: 1.6;
-  padding: 15px 0;
+  padding: 0 0;
 }
 
 /*----------------------------------------------------------------------------------
 		 				footer
 ------------------------------------------------------------------------------------*/
 #globalFooter {
-  background: #f9f9f9;
+  background: #171717;
   width: 100%;
   padding: 15px 0;
+  color: #fff;
+}
+#globalFooter .wrapInner {
+  background: #171717;
 }

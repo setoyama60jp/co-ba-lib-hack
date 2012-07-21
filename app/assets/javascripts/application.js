@@ -3,5 +3,6 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require jquery.masonry.min
+//= require top
 //= require detail
 //= require_self

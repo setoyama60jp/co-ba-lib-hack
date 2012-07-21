@@ -4,15 +4,602 @@ CSS information
  file name  :  page.css
  style info :  ページ固有css
 =================================================================== */
-.clearfix, #detail #profile, #detail div#bookArea, #detail div#bookDetailList01 {
+.clearfix, #topPage div#slideContents ul.shelfList01, #detail #profile, #detail div#bookArea, #detail div#bookDetailList01 {
   *zoom: 1;
 }
-.clearfix:after, #detail #profile:after, #detail div#bookArea:after, #detail div#bookDetailList01:after {
+.clearfix:after, #topPage div#slideContents ul.shelfList01:after, #detail #profile:after, #detail div#bookArea:after, #detail div#bookDetailList01:after {
   content: ".";
   display: block;
   clear: both;
   height: 0;
   visibility: hidden;
+}
+
+/*----------------------------------------------------------------------------------
+		 				TOPページ
+------------------------------------------------------------------------------------*/
+#topPage {
+  position: relative;
+  width: 100%;
+  min-width: 1024px;
+  overflow: hidden;
+}
+#topPage ul#slideBtn li#btnPrev,
+#topPage ul#slideBtn li#btnNext {
+  position: fixed;
+  top: 80px;
+  z-index: 5;
+}
+#topPage ul#slideBtn li#btnPrev {
+  left: 0;
+}
+#topPage ul#slideBtn li#btnNext {
+  right: 0;
+}
+#topPage ul#slideBtn li {
+  cursor: pointer;
+}
+#topPage div#slideContents {
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+#topPage div#slideContents ul.shelfList01 li {
+  width: 203px;
+  position: absolute;
+  background: #000;
+}
+#topPage div#slideContents ul.shelfList01 li a {
+  position: relative;
+  display: block;
+}
+#topPage div#slideContents ul.shelfList01 li a p.shelfName {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  left: 0;
+  margin-top: -0.5em;
+  width: 203px;
+  font-size: 108%;
+}
+#topPage div#slideContents ul.shelfList01 li a:hover img {
+  opacity: 0.4;
+}
+#topPage div.east {
+  width: 2560px;
+  height: 950px;
+  background: url(/assets/images/common/bg_east.jpg) 0 0 no-repeat;
+}
+#topPage div.east ul.row01 li {
+  height: 117px;
+  top: 8px;
+}
+#topPage div.east ul.row01 li#e-1-1 {
+  left: 431px;
+}
+#topPage div.east ul.row01 li#e-1-2 {
+  left: 643px;
+}
+#topPage div.east ul.row01 li#e-1-3 {
+  left: 856px;
+}
+#topPage div.east ul.row01 li#e-1-4 {
+  left: 1069px;
+}
+#topPage div.east ul.row01 li#e-1-5 {
+  left: 1282px;
+}
+#topPage div.east ul.row01 li#e-1-6 {
+  left: 1495px;
+}
+#topPage div.east ul.row01 li#e-1-7 {
+  left: 1708px;
+}
+#topPage div.east ul.row01 li#e-1-8 {
+  left: 1921px;
+}
+#topPage div.east ul.row01 li#e-1-9 {
+  left: 2134px;
+}
+#topPage div.east ul.row02 {
+  /*li#e-2-1 { left: 431px;}*/
+}
+#topPage div.east ul.row02 li {
+  height: 148px;
+  top: 132px;
+}
+#topPage div.east ul.row02 li#e-2-2 {
+  left: 536px;
+}
+#topPage div.east ul.row02 li#e-2-3 {
+  left: 748px;
+}
+#topPage div.east ul.row02 li#e-2-4 {
+  left: 960px;
+}
+#topPage div.east ul.row02 li#e-2-5 {
+  left: 1172px;
+}
+#topPage div.east ul.row02 li#e-2-6 {
+  left: 1384px;
+}
+#topPage div.east ul.row02 li#e-2-7 {
+  left: 1596px;
+}
+#topPage div.east ul.row02 li#e-2-8 {
+  left: 1808px;
+}
+#topPage div.east ul.row03 li {
+  height: 148px;
+  top: 289px;
+}
+#topPage div.east ul.row03 li#e-3-1 {
+  left: 431px;
+}
+#topPage div.east ul.row03 li#e-3-2 {
+  left: 643px;
+}
+#topPage div.east ul.row03 li#e-3-3 {
+  left: 855px;
+}
+#topPage div.east ul.row03 li#e-3-4 {
+  left: 1067px;
+}
+#topPage div.east ul.row03 li#e-3-5 {
+  left: 1279px;
+}
+#topPage div.east ul.row03 li#e-3-6 {
+  left: 1491px;
+}
+#topPage div.east ul.row03 li#e-3-7 {
+  left: 1703px;
+}
+#topPage div.east ul.row03 li#e-3-8 {
+  left: 1915px;
+}
+#topPage div.east ul.row04 li {
+  height: 148px;
+  top: 444px;
+}
+#topPage div.east ul.row04 li#e-4-2 {
+  left: 537px;
+}
+#topPage div.east ul.row04 li#e-4-3 {
+  left: 749px;
+}
+#topPage div.east ul.row04 li#e-4-4 {
+  left: 961px;
+}
+#topPage div.east ul.row04 li#e-4-5 {
+  left: 1173px;
+}
+#topPage div.east ul.row04 li#e-4-6 {
+  left: 1385px;
+}
+#topPage div.east ul.row04 li#e-4-7 {
+  left: 1597px;
+}
+#topPage div.east ul.row04 li#e-4-8 {
+  left: 1809px;
+}
+#topPage div.east ul.row05 li {
+  height: 156px;
+  top: 600px;
+}
+#topPage div.east ul.row05 li#e-5-1 {
+  left: 7px;
+}
+#topPage div.east ul.row05 li#e-5-2 {
+  left: 219px;
+}
+#topPage div.east ul.row05 li#e-5-3 {
+  left: 431px;
+}
+#topPage div.east ul.row05 li#e-5-4 {
+  left: 643px;
+}
+#topPage div.east ul.row05 li#e-5-5 {
+  left: 855px;
+}
+#topPage div.east ul.row05 li#e-5-6 {
+  left: 1067px;
+}
+#topPage div.east ul.row05 li#e-5-7 {
+  left: 1279px;
+}
+#topPage div.east ul.row05 li#e-5-8 {
+  left: 1491px;
+}
+#topPage div.east ul.row05 li#e-5-9 {
+  left: 1703px;
+}
+#topPage div.east ul.row05 li#e-5-10 {
+  left: 1915px;
+}
+#topPage div.east ul.row05 li#e-5-11 {
+  left: 2127px;
+}
+#topPage div.east ul.row05 li#e-5-12 {
+  left: 2339px;
+}
+#topPage div.east ul.row06 li {
+  height: 156px;
+  top: 763px;
+}
+#topPage div.east ul.row06 li#e-6-1 {
+  left: -100px;
+}
+#topPage div.east ul.row06 li#e-6-2 {
+  left: 112px;
+}
+#topPage div.east ul.row06 li#e-6-3 {
+  left: 324px;
+}
+#topPage div.east ul.row06 li#e-6-4 {
+  left: 536px;
+}
+#topPage div.east ul.row06 li#e-6-5 {
+  left: 748px;
+}
+#topPage div.east ul.row06 li#e-6-6 {
+  left: 960px;
+}
+#topPage div.east ul.row06 li#e-6-7 {
+  left: 1172px;
+}
+#topPage div.east ul.row06 li#e-6-8 {
+  left: 1384px;
+}
+#topPage div.east ul.row06 li#e-6-9 {
+  left: 1596px;
+}
+#topPage div.east ul.row06 li#e-6-10 {
+  left: 1808px;
+}
+#topPage div.east ul.row06 li#e-6-11 {
+  left: 2020px;
+}
+#topPage div.east ul.row06 li#e-6-12 {
+  left: 2232px;
+}
+#topPage div.east ul.row06 li#e-6-13 {
+  left: 2444px;
+}
+#topPage div.east ul.row06 li#e-6-14 {
+  left: 2656px;
+}
+#topPage div.west {
+  width: 2560px;
+  height: 950px;
+  background: url(/assets/images/common/bg_east.jpg) 0 0 no-repeat;
+}
+#topPage div.west ul.row01 li {
+  height: 117px;
+  top: 8px;
+}
+#topPage div.west ul.row01 li#w-1-1 {
+  left: 431px;
+}
+#topPage div.west ul.row01 li#w-1-2 {
+  left: 643px;
+}
+#topPage div.west ul.row01 li#w-1-3 {
+  left: 856px;
+}
+#topPage div.west ul.row01 li#w-1-4 {
+  left: 1069px;
+}
+#topPage div.west ul.row01 li#w-1-5 {
+  left: 1282px;
+}
+#topPage div.west ul.row01 li#w-1-6 {
+  left: 1495px;
+}
+#topPage div.west ul.row01 li#w-1-7 {
+  left: 1708px;
+}
+#topPage div.west ul.row01 li#w-1-8 {
+  left: 1921px;
+}
+#topPage div.west ul.row01 li#w-1-9 {
+  left: 2134px;
+}
+#topPage div.west ul.row02 {
+  /*li#w-2-1 { left: 431px;}*/
+}
+#topPage div.west ul.row02 li {
+  height: 148px;
+  top: 132px;
+}
+#topPage div.west ul.row02 li#w-2-2 {
+  left: 536px;
+}
+#topPage div.west ul.row02 li#w-2-3 {
+  left: 748px;
+}
+#topPage div.west ul.row02 li#w-2-4 {
+  left: 960px;
+}
+#topPage div.west ul.row02 li#w-2-5 {
+  left: 1172px;
+}
+#topPage div.west ul.row02 li#w-2-6 {
+  left: 1384px;
+}
+#topPage div.west ul.row02 li#w-2-7 {
+  left: 1596px;
+}
+#topPage div.west ul.row02 li#w-2-8 {
+  left: 1808px;
+}
+#topPage div.west ul.row03 li {
+  height: 148px;
+  top: 289px;
+}
+#topPage div.west ul.row03 li#w-3-1 {
+  left: 431px;
+}
+#topPage div.west ul.row03 li#w-3-2 {
+  left: 643px;
+}
+#topPage div.west ul.row03 li#w-3-3 {
+  left: 855px;
+}
+#topPage div.west ul.row03 li#w-3-4 {
+  left: 1067px;
+}
+#topPage div.west ul.row03 li#w-3-5 {
+  left: 1279px;
+}
+#topPage div.west ul.row03 li#w-3-6 {
+  left: 1491px;
+}
+#topPage div.west ul.row03 li#w-3-7 {
+  left: 1703px;
+}
+#topPage div.west ul.row03 li#w-3-8 {
+  left: 1915px;
+}
+#topPage div.west ul.row04 li {
+  height: 148px;
+  top: 444px;
+}
+#topPage div.west ul.row04 li#w-4-2 {
+  left: 537px;
+}
+#topPage div.west ul.row04 li#w-4-3 {
+  left: 749px;
+}
+#topPage div.west ul.row04 li#w-4-4 {
+  left: 961px;
+}
+#topPage div.west ul.row04 li#w-4-5 {
+  left: 1173px;
+}
+#topPage div.west ul.row04 li#w-4-6 {
+  left: 1385px;
+}
+#topPage div.west ul.row04 li#w-4-7 {
+  left: 1597px;
+}
+#topPage div.west ul.row04 li#w-4-8 {
+  left: 1809px;
+}
+#topPage div.west ul.row05 li {
+  height: 156px;
+  top: 600px;
+}
+#topPage div.west ul.row05 li#w-5-1 {
+  left: 7px;
+}
+#topPage div.west ul.row05 li#w-5-2 {
+  left: 219px;
+}
+#topPage div.west ul.row05 li#w-5-3 {
+  left: 431px;
+}
+#topPage div.west ul.row05 li#w-5-4 {
+  left: 643px;
+}
+#topPage div.west ul.row05 li#w-5-5 {
+  left: 855px;
+}
+#topPage div.west ul.row05 li#w-5-6 {
+  left: 1067px;
+}
+#topPage div.west ul.row05 li#w-5-7 {
+  left: 1279px;
+}
+#topPage div.west ul.row05 li#w-5-8 {
+  left: 1491px;
+}
+#topPage div.west ul.row05 li#w-5-9 {
+  left: 1703px;
+}
+#topPage div.west ul.row05 li#w-5-10 {
+  left: 1915px;
+}
+#topPage div.west ul.row05 li#w-5-11 {
+  left: 2127px;
+}
+#topPage div.west ul.row05 li#w-5-12 {
+  left: 2339px;
+}
+#topPage div.west ul.row06 li {
+  height: 156px;
+  top: 763px;
+}
+#topPage div.west ul.row06 li#w-6-1 {
+  left: -100px;
+}
+#topPage div.west ul.row06 li#w-6-2 {
+  left: 112px;
+}
+#topPage div.west ul.row06 li#w-6-3 {
+  left: 324px;
+}
+#topPage div.west ul.row06 li#w-6-4 {
+  left: 536px;
+}
+#topPage div.west ul.row06 li#w-6-5 {
+  left: 748px;
+}
+#topPage div.west ul.row06 li#w-6-6 {
+  left: 960px;
+}
+#topPage div.west ul.row06 li#w-6-7 {
+  left: 1172px;
+}
+#topPage div.west ul.row06 li#w-6-8 {
+  left: 1384px;
+}
+#topPage div.west ul.row06 li#w-6-9 {
+  left: 1596px;
+}
+#topPage div.west ul.row06 li#w-6-10 {
+  left: 1808px;
+}
+#topPage div.west ul.row06 li#w-6-11 {
+  left: 2020px;
+}
+#topPage div.west ul.row06 li#w-6-12 {
+  left: 2232px;
+}
+#topPage div.west ul.row06 li#w-6-13 {
+  left: 2444px;
+}
+#topPage div.west ul.row06 li#w-6-14 {
+  left: 2656px;
+}
+#topPage div.north {
+  width: 2853px;
+  height: 1087px;
+  background: url(/assets/images/common/bg_north.jpg) 0 0 no-repeat;
+}
+#topPage div.north ul.row01 li {
+  height: 117px;
+  top: 8px;
+}
+#topPage div.north ul.row01 li#n-1-1 {
+  left: 10px;
+}
+#topPage div.north ul.row01 li#n-1-2 {
+  left: 222px;
+}
+#topPage div.north ul.row01 li#n-1-3 {
+  left: 434px;
+}
+#topPage div.north ul.row01 li#n-1-4 {
+  width: 216px;
+  left: 646px;
+}
+#topPage div.north ul.row01 li#n-1-5 {
+  width: 216px;
+  left: 871px;
+}
+#topPage div.north ul.row01 li#n-1-6 {
+  width: 216px;
+  left: 1096px;
+}
+#topPage div.north ul.row01 li#n-1-7 {
+  width: 216px;
+  left: 1321px;
+}
+#topPage div.north ul.row01 li#n-1-8 {
+  width: 216px;
+  left: 1546px;
+}
+#topPage div.north ul.row01 li#n-1-9 {
+  width: 216px;
+  left: 1771px;
+}
+#topPage div.north ul.row01 li#n-1-10 {
+  width: 216px;
+  left: 1996px;
+}
+#topPage div.north ul.row01 li#n-1-11 {
+  left: 2221px;
+}
+#topPage div.north ul.row01 li#n-1-12 {
+  left: 2433px;
+}
+#topPage div.north ul.row01 li#n-1-13 {
+  left: 2645px;
+}
+#topPage div.north ul.row02 li {
+  height: 148px;
+  top: 133px;
+}
+#topPage div.north ul.row02 li#n-2-3 {
+  left: 329px;
+}
+#topPage div.north ul.row02 li#n-2-4 {
+  width: 212px;
+  left: 541px;
+}
+#topPage div.north ul.row02 li#n-2-5 {
+  width: 212px;
+  left: 763px;
+}
+#topPage div.north ul.row02 li#n-2-10 {
+  width: 212px;
+  left: 1872px;
+}
+#topPage div.north ul.row02 li#n-2-12 {
+  left: 2319px;
+}
+#topPage div.north ul.row03 li {
+  height: 148px;
+  top: 288px;
+}
+#topPage div.north ul.row03 li#nl-3-1 {
+  left: 10px;
+}
+#topPage div.north ul.row03 li#nl-3-2 {
+  left: 222px;
+}
+#topPage div.north ul.row03 li#nl-3-3 {
+  left: 434px;
+}
+#topPage div.north ul.row03 li#nr-3-1 {
+  left: 2212px;
+}
+#topPage div.north ul.row03 li#nr-3-2 {
+  left: 2424px;
+}
+#topPage div.north ul.row03 li#nr-3-3 {
+  left: 2636px;
+}
+#topPage div.north ul.row04 li {
+  height: 148px;
+  top: 444px;
+}
+#topPage div.north ul.row04 li#nl-4-2 {
+  left: 116px;
+}
+#topPage div.north ul.row04 li#nl-4-3 {
+  left: 328px;
+}
+#topPage div.north ul.row04 li#nl-4-4 {
+  width: 97px;
+  left: 540px;
+}
+#topPage div.north ul.row04 li#nr-4-3 {
+  left: 2528px;
+}
+#topPage div.north ul.row05 li {
+  height: 156px;
+  top: 600px;
+}
+#topPage div.north ul.row05 li#nl-5-2 {
+  left: 222px;
+}
+#topPage div.north ul.row05 li#nl-5-3 {
+  left: 434px;
+}
+#topPage div.north ul.row05 li#nr-5-1 {
+  left: 2212px;
 }
 
 /*----------------------------------------------------------------------------------
