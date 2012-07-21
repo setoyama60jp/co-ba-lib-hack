@@ -6,5 +6,5 @@
 #
 test_user:
   email: test@coba.com
-  encrypted_password: $2a$10$2tFMICLPYXPGTOf8P1ucSeD0VOnOKiSS9J5x1OA71GsHHXHdoX3RO
+  encrypted_password: $2a$10$2S4QOI53vCx/3XLnUXnvjOLHjRGSVKebx2mCSQhwSeg87k5jZ0e1q
   confirmed_at: <%= Date.today %>
