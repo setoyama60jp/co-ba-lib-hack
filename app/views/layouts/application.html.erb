@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:mixi="http://mixi-platform.com/ns#">
 <head>
   <title>CoBaLibHack</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="ページタイトル">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="サイト名">
+  <meta property="og:image" content="http://blog.sinap.jp/res/images/common/OGP.png">
+  <meta property="fb:app_id" content="120475414763656">
+  <meta property="og:locale" content="ja_JP">
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -14,7 +22,40 @@
   <p><%= flash[:alert] %></p>
 <% end %>
 
-<%= yield %>
+<div id="wrapper">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=120475414763656";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
+  <header id="globalHeader">
+    <div class="wrapInner">
+      <h1>
+        <a href="http://hackathon.ale-cole.com/">
+          <%= image_tag 'logo.png', :alt=> "ロゴ名", :width => "94", :height => "31" %>
+        </a>
+      </h1>
+    </div>
+    <!-- /.wrapInner -->
+  </header>
+  <!-- /#globalHeader -->
+
+  <%= yield %>
+
+  <footer id="globalFooter">
+    <div class="wrapInner">
+      <p class="copyright">
+        <small>Copyright © 2012 tsukuruba inc. All rights reserved.</small>
+      </p>
+    </div>
+    <!-- /.wrapInner -->
+  </footer>
+  <!-- /#globalFooter -->
+</div>
+<!-- /#wrapper -->
 </body>
 </html>

@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  :  page.css
+ style info :  ページ固有css
+=================================================================== */
+.clearfix, #detail #profile, #detail div#bookArea, #detail div#bookDetailList01 {
+  *zoom: 1;
+}
+.clearfix:after, #detail #profile:after, #detail div#bookArea:after, #detail div#bookDetailList01:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*----------------------------------------------------------------------------------
+		 				詳細ページ
+------------------------------------------------------------------------------------*/
+#detail #profile {
+  padding-bottom: 15px;
+}
+#detail #profile h1 {
+  float: left;
+  width: 300px;
+  display: table;
+}
+#detail #profile h1 span.photo {
+  width: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#detail #profile h1 span.text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 153.9%;
+}
+#detail #profile div#profileRight {
+  width: 700px;
+  float: left;
+}
+#detail div#bookArea {
+  padding-bottom: 15px;
+}
+#detail div#bookArea div#bookShelf {
+  width: 600px;
+  float: left;
+  background: #999;
+}
+#detail div#bookArea div#bookShelf div#bookImage {
+  display: table;
+}
+#detail div#bookArea div#bookShelf div#bookImage p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 500px;
+}
+#detail div#bookArea div#fbComments {
+  width: 400px;
+  height: 500px;
+  float: right;
+  overflow-y: scroll;
+}
+#detail div#bookDetailList01 div.box {
+  float: left;
+  width: 174px;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  background: #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#detail div#bookDetailList01 div.box p.photo {
+  width: 174px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#detail div#bookDetailList01 div.box .title {
+  font-size: 123.1%;
+  padding-bottom: 5px;
+}
