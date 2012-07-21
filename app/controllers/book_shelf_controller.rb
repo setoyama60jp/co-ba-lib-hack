@@ -17,7 +17,7 @@ class BookShelfController < ApplicationController
   end
 
   def show_shelf_detail
-
+    @target_book_shelf = BookShelf.find_by_id(params[:book_shelf_id])
   end
 
 end

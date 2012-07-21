@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120721155424) do
+ActiveRecord::Schema.define(:version => 20120721155425) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -87,6 +87,8 @@ ActiveRecord::Schema.define(:version => 20120721155424) do
     t.string   "unconfirmed_email"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "name"
+    t.string   "facebook_id"
   end
 
   add_index "coba_users", ["confirmation_token"], :name => "index_coba_users_on_confirmation_token", :unique => true
