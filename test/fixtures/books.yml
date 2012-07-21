@@ -12,7 +12,7 @@ test_book:
   category: book
   book_shelf: test_shelf
 
-test_book:
+test_book2:
   booklog_id: test1234
   asin: 123456789
   booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"

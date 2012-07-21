@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 test_shelf:
-  id: 12
   address: north-1
   coba_user: test_user
   photo_url: dammy_book_shelf_jpg
