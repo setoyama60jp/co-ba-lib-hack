@@ -21,7 +21,7 @@
 </div><!-- /#bookShelf -->
 
 <div id="fbComments">
-<div class="fb-comments" data-href="http://blog.ale-cole.com/" data-num-posts="2" data-width="380"></div>
+  <div class="fb-comments" data-href="<%= url_for(:controller => 'book_shelf', :action => 'show_shelf_detail', :book_shelf_id => params[:book_shelf_id], :only_path => false) %>" data-num-posts="2" data-width="380"></div>
 </div><!-- /#fbComments -->
 
 </div><!-- /#bookArea -->

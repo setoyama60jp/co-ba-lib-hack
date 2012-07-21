@@ -10,7 +10,7 @@ gem 'rails', '3.2.2'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  #gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -51,5 +51,9 @@ gem 'dalli', '1.1.5'
 gem 'devise', '2.0.4'
 
 gem 'activeadmin'
+gem 'sass-rails',   '~> 3.2.3'
+gem "meta_search", '>= 1.1.0.pre'
+gem 'formtastic', '~> 2.1.1'  # 2012/04/17時点のactiveadminのバグで2.1.1で動作する
+
 
 gem 'pg'

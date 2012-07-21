@@ -176,8 +176,10 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   dalli (= 1.1.5)
   devise (= 2.0.4)
+  formtastic (~> 2.1.1)
   heroku
   jquery-rails
+  meta_search (>= 1.1.0.pre)
   pg
   railroady
   rails (= 3.2.2)
