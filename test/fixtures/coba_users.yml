@@ -4,8 +4,7 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+test_user:
+  email: test@coba.com
+  encrypted_password: $2a$10$2tFMICLPYXPGTOf8P1ucSeD0VOnOKiSS9J5x1OA71GsHHXHdoX3RO
+  confirmed_at: <%= Date.today %>

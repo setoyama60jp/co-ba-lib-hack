@@ -1,23 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  booklog_id: MyString
-  asin: MyString
-  booklog_url: MyString
-  title: MyString
-  author: MyString
-  image_url: MyString
-  image_width: 1
-  image_height: 1
-  category: MyString
+test_book:
+  booklog_id: test1234
+  asin: 123456789
+  booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
+  title: test_title
+  author: test_author
+  image_url: "dammy_book_detail.jpg"
+  image_width: 70
+  image_height: 70
+  category: book
+  book_shelf: test_shelf
 
-two:
-  booklog_id: MyString
-  asin: MyString
-  booklog_url: MyString
-  title: MyString
-  author: MyString
-  image_url: MyString
-  image_width: 1
-  image_height: 1
-  category: MyString
+test_book:
+  booklog_id: test1234
+  asin: 123456789
+  booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
+  title: test_title
+  author: test_author
+  image_url: "dammy_book_detail.jpg"
+  image_width: 70
+  image_height: 70
+  category: book
+  book_shelf: test_shelf
