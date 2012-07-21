@@ -6,4 +6,5 @@ test_shelf:
   coba_user_id: 1
   photo_url: dammy_book_shelf.jpg
   introduction: "MyText introduction"
+  book_shelf_position: north
 

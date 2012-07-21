@@ -25,3 +25,55 @@ test_book2:
   image_height: 70
   category: book
   book_shelf_id: 1
+
+test_book3:
+  id: 3
+  booklog_id: test1234
+  asin: 123456789
+  booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
+  title: test_title
+  author: test_author
+  image_url: "dammy_book_detail.jpg"
+  image_width: 70
+  image_height: 70
+  category: book
+  book_shelf_id: 1
+
+test_book4:
+  id: 4
+  booklog_id: test1234
+  asin: 123456789
+  booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
+  title: test_title
+  author: test_author
+  image_url: "dammy_book_detail.jpg"
+  image_width: 70
+  image_height: 70
+  category: book
+  book_shelf_id: 1
+
+test_book5:
+  id: 5
+  booklog_id: test1234
+  asin: 123456789
+  booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
+  title: test_title
+  author: test_author
+  image_url: "dammy_book_detail.jpg"
+  image_width: 70
+  image_height: 70
+  category: book
+  book_shelf_id: 1
+
+test_book6:
+  id: 6
+  booklog_id: test1234
+  asin: 123456789
+  booklog_url: "http://booklog.jp/users/gocci/archives/1/409123772X"
+  title: test_title
+  author: test_author
+  image_url: "dammy_book_detail.jpg"
+  image_width: 70
+  image_height: 70
+  category: book
+  book_shelf_id: 1
