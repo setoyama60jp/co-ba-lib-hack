@@ -69,7 +69,7 @@ CSS information
 #topPage div.east {
   width: 2560px;
   height: 950px;
-  background: url(/assets/images/common/bg_east.jpg) 0 0 no-repeat;
+  background: url(/assets/bg_east.jpg) 0 0 no-repeat;
 }
 #topPage div.east ul.row01 li {
   height: 117px;
@@ -272,7 +272,7 @@ CSS information
 #topPage div.west {
   width: 2560px;
   height: 950px;
-  background: url(/assets/images/common/bg_east.jpg) 0 0 no-repeat;
+  background: url(/assets/bg_east.jpg) 0 0 no-repeat;
 }
 #topPage div.west ul.row01 li {
   height: 117px;
@@ -475,7 +475,7 @@ CSS information
 #topPage div.north {
   width: 2853px;
   height: 1087px;
-  background: url(/assets/images/common/bg_north.jpg) 0 0 no-repeat;
+  background: url(/assets/bg_north.jpg) 0 0 no-repeat;
 }
 #topPage div.north ul.row01 li {
   height: 117px;
