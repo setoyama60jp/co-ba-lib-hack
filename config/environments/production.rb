@@ -67,6 +67,6 @@ CoBaLibHack::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
 
-  config.action_mailer.default_url_options = { :host => 'co-ba-lib-hack.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'co-ba-library-online.herokuapp.com' }
 
 end
