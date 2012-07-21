@@ -13,7 +13,7 @@ ActiveAdmin.register Book do
       f.input :image_width
       f.input :image_height
       f.input :category
-      f.input :book_shelf_id
+      f.input :book_shelf
     end
     f.buttons
   end
