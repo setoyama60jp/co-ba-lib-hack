@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120721155423) do
+ActiveRecord::Schema.define(:version => 20120721155424) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -65,8 +65,9 @@ ActiveRecord::Schema.define(:version => 20120721155423) do
     t.integer  "image_width"
     t.integer  "image_height"
     t.string   "category"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "book_shelf_id"
   end
 
   create_table "coba_users", :force => true do |t|
