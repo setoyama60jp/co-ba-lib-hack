@@ -1,4 +1,5 @@
 class BookShelfController < ApplicationController
+  layout "detail_layout", :only => [:show_shelf_detail]
 
   def show_north_shelf
 
