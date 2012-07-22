@@ -63,6 +63,7 @@ CoBaLibHack::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   get 'show_north_shelf' => 'book_shelf#show_north_shelf'
+  get 'show_south_shelf' => 'book_shelf#show_south_shelf'
   get 'show_east_shelf' => 'book_shelf#show_east_shelf'
   get 'show_west_shelf' => 'book_shelf#show_west_shelf'
   get 'show_shelf_detail/:book_shelf_id' => 'book_shelf#show_shelf_detail'
