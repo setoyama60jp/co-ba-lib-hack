@@ -126,7 +126,21 @@ div#contentsWrapper {
   width: 100%;
   padding: 15px 0;
   color: #fff;
+  position: relative;
+  z-index: 7;
 }
 #globalFooter .wrapInner {
   background: #171717;
+}
+#globalFooter p.copyright {
+  float: left;
+  width: 400px;
+}
+#globalFooter p.library {
+  float: right;
+  width: 400px;
+  text-align: right;
+}
+#globalFooter p.library a {
+  color: #fff;
 }

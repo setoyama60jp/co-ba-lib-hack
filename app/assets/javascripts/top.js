@@ -11,16 +11,40 @@ $(function(){
 	var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
 	
+	//ページ移動フラグ
+	var nextFlag = false;
+	var prevFlag = false;
+	
 	//移動幅（コンテンツの幅 ー ウィンドウ幅）用の変数
 	var moveLimit = 0;
 	
 	//移動URL
 	var linkUrl = [];
-	linkUrl[0] = 'http://local.hackathon.jp/top.php';
-	linkUrl[1] = 'http://local.hackathon.jp/south.php';
-	linkUrl[2] = 'http://local.hackathon.jp/west.php';
-	linkUrl[3] = 'http://local.hackathon.jp/north.php';
+	//linkUrl[0] = 'http://local.hackathon.jp/top.php';
+	//linkUrl[1] = 'http://local.hackathon.jp/south.php';
+	//linkUrl[2] = 'http://local.hackathon.jp/west.php';
+	//linkUrl[3] = 'http://local.hackathon.jp/north.php';
 	
+	linkUrl[0] = 'http://co-ba-library-online.herokuapp.com/';
+	linkUrl[1] = 'http://co-ba-library-online.herokuapp.com/show_south_shelf';
+	linkUrl[2] = 'http://co-ba-library-online.herokuapp.com/show_west_shelf';
+	linkUrl[3] = 'http://co-ba-library-online.herokuapp.com/show_north_shelf';
+	
+	//現在地
+	var currentNum;
+	
+	if ($('body').hasClass('east')) {
+		currentNum = 0;
+	} else if ($('body').hasClass('south')) {
+		currentNum = 1;
+	} else if ($('body').hasClass('west')) {
+		currentNum = 2;
+	} else if ($('body').hasClass('north')) {
+		currentNum = 3;
+	}
+	
+	//最大値
+	var maxNum = linkUrl.length;
 	
 	
 	//ポジションの値
@@ -53,11 +77,20 @@ $(function(){
 	}
 	
 	$('#btnNext').click(function (){
-		if (moveLimit > (contentsPotision - shelfWidth)) {
+		if (nextFlag) {
+			if (maxNum <= (currentNum + 1)) {
+				location.href = linkUrl[0];
+			} else {
+				location.href = linkUrl[currentNum + 1];
+			}
+		} else if (moveLimit > (contentsPotision - shelfWidth)) {
 			contentsPotision = moveLimit;
+			nextFlag = true;	
 		} else {
 			contentsPotision = contentsPotision - shelfWidth;
 		}
+		
+		prevFlag = false;
 		
 		//console.log(contentsPotision);
 		contentsMove(contentsPotision);
@@ -65,11 +98,20 @@ $(function(){
 	
 	
 	$('#btnPrev').click(function (){
-		if (0 < (contentsPotision + shelfWidth)) {
+		if (prevFlag) {
+			if (0 > (currentNum - 1)) {
+				location.href = linkUrl[maxNum - 1];
+			} else {
+				location.href = linkUrl[currentNum - 1];
+			}
+		} else if(0 < (contentsPotision + shelfWidth)) {
 			contentsPotision = 0;
+			prevFlag = true;	
 		} else {
 			contentsPotision = contentsPotision + shelfWidth;
 		}
+		
+		nextFlag = false;
 		
 		//console.log(contentsPotision);
 		contentsMove(contentsPotision);
