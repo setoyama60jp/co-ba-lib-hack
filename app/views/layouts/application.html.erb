@@ -14,7 +14,19 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+<%# ここらへんのclass切り替えは、テンプレートの機能を使って、もっと綺麗に書けそう。 %>
+<% if params[:action] == 'show_north_shelf' %>
+  <body class="north">
+<% elsif params[:action] == 'show_south_shelf' %>
+  <body class="south">
+<% elsif params[:action] == 'show_east_shelf' %>
+  <body class="east">
+<% elsif params[:action] == 'show_west_shelf' %>
+  <body class="west">
+<% end %>
+
+
 <% if flash[:notice] %>
   <p><%= flash[:notice] %></p>
 <% end %>
