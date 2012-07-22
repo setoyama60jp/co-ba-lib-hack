@@ -31,7 +31,6 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
 
 html {
   -webkit-text-size-adjust: none;
-  color: #ccc;
 }
 
 body {
@@ -73,15 +72,42 @@ input[type="radio"] {
 		 				header
 ------------------------------------------------------------------------------------*/
 #globalHeader {
-  background: #171717;
+  background: url(/assets/bg_header.png) 0 bottom repeat-x;
   width: 100%;
-  padding: 10px 0;
+  position: relative;
+  z-index: 7;
 }
 #globalHeader .wrapInner {
-  background: #171717;
+  background: url(/assets/bg_header.png) 0 bottom repeat-x;
 }
 #globalHeader h1 {
-  text-align: center;
+  float: left;
+  width: 250px;
+  padding: 13px 0 0;
+}
+#globalHeader div#headerRight {
+  float: right;
+  width: 500px;
+  text-align: right;
+}
+#globalHeader div#headerRight ul {
+  display: inline-block;
+}
+#globalHeader div#headerRight ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+#globalHeader div#headerRight p {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+#globalHeader div#headerRight p a {
+  color: #fff;
+  text-decoration: none;
+}
+#globalHeader div#headerRight p a:hover {
+  color: #ccc;
 }
 
 /*----------------------------------------------------------------------------------

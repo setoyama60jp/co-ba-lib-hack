@@ -7,11 +7,21 @@ $(function(){
 	//本棚一つの幅
 	var shelfWidth = 203;
 	
-	//ウィンドウ幅
+	//ウィンドウ幅・高さ
 	var windowWidth = $(window).width();
+	var windowHeight = $(window).height();
 	
 	//移動幅（コンテンツの幅 ー ウィンドウ幅）用の変数
 	var moveLimit = 0;
+	
+	//移動URL
+	var linkUrl = [];
+	linkUrl[0] = 'http://local.hackathon.jp/top.php';
+	linkUrl[1] = 'http://local.hackathon.jp/south.php';
+	linkUrl[2] = 'http://local.hackathon.jp/west.php';
+	linkUrl[3] = 'http://local.hackathon.jp/north.php';
+	
+	
 	
 	//ポジションの値
 	var contentsPotision = 0;
@@ -76,4 +86,8 @@ $(function(){
 		}
 	);
 	
+	
+	//スライドボタン
+	var slideBtnHeight = windowHeight;
+	$('#slideBtn').find('span').css('height', slideBtnHeight);
 });

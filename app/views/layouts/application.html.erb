@@ -14,7 +14,19 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+<%# ここらへんのclass切り替えは、テンプレートの機能を使って、もっと綺麗に書けそう。 %>
+<% if params[:action] == 'show_north_shelf' %>
+  <body class="north">
+<% elsif params[:action] == 'show_south_shelf' %>
+  <body class="south">
+<% elsif params[:action] == 'show_east_shelf' %>
+  <body class="east">
+<% elsif params[:action] == 'show_west_shelf' %>
+  <body class="west">
+<% end %>
+
+
 <% if flash[:notice] %>
   <p><%= flash[:notice] %></p>
 <% end %>
@@ -40,6 +52,14 @@
           <% end %>
         </a>
       </h1>
+      <div id="headerRight">
+      <ul class="bt crLink">
+        <li><%= link_to root_path do %><img src="/assets/nav_east.png" alt="東" width="80" height="81"><% end %></li>
+        <li><%= link_to show_south_shelf_path do %><img src="/assets/nav_south.png" alt="東" width="80" height="81"><% end %></li>
+        <li><%= link_to show_west_shelf_path do %><img src="/assets/nav_west.png" alt="東" width="80" height="81"><% end %></li>
+        <li><%= link_to show_north_shelf_path do %><img src="/assets/nav_north.png" alt="東" width="80" height="81"><% end %></li>
+      </ul>
+      </div><!-- /#headerRight -->
     </div>
     <!-- /.wrapInner -->
   </header>

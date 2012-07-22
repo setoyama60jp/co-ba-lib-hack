@@ -4,6 +4,11 @@ class BookShelfController < ApplicationController
 
   end
 
+  def show_south_shelf
+
+  end
+
+
   def show_west_shelf
 
   end
