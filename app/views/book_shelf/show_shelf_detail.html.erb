@@ -54,7 +54,13 @@
 
             </p>
 
-            <h2 class="title"><%= book.title %></h2>
+            <h2 class="title">
+              <% if book.asin %>
+                <%= link_to book.title, 'http://amazon.jp/o/ASIN/' + book.asin.to_s + '/rimlet-22/ref=nosim/' %>
+              <% else %>
+                <%= book.title %>
+              <% end %>
+            </h2>
 
             <p class="author"><%= book.author %></p>
           </div>
